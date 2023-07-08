@@ -25,6 +25,7 @@ print((selectionSort(array2)))
 def insertionSort(myArray):
     arrayLength = len(myArray)
     for i in range(1, arrayLength):
+        # Assumes the first index is sorted
         temp = myArray[i]
         position = i
         while position > 0 and myArray[position - 1] > temp:
